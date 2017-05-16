@@ -1,0 +1,767 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+html, body, .warp {
+  width: 100%;
+  height: 100%;
+  background: none; }
+
+.warp {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+   }
+
+header {
+  width: 100%;
+  height: 10.4rem;
+  background: #4194f0;
+  
+   }
+
+section {
+
+  flex: 1;
+  overflow-y: auto;
+   }
+
+.h_top {
+  width: 100%;
+  height: 4rem;
+  background: #4194f0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row; }
+  // .h_top .s_t {
+  //   margin-top: 1rem;
+  //   padding-left: 1rem; }
+    .h_top .s_t img {
+      width: auto;
+      height: 2.1rem;
+      background: none; }
+  .h_top .h_1 {
+    margin-left: 4rem;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 4rem; }
+
+@media screen and (min-width: 374px) and (max-width: 414px) {
+  .h_top {
+    padding-left: 0.5rem; }
+    .h_top .s_t {
+      margin-top: 1.2rem; }
+      .h_top .s_t img {
+        width: auto;
+        height: 2.3rem;
+        background: none; }
+    .h_top .h_1 {
+      margin-left: 1.3rem;
+      color: white;
+      font-size: 1.8rem;
+      line-height: 4rem; } }
+.h_un {
+  width: 100%;
+  height: 6.4rem;
+  background: #4194f0;
+  padding: 0 1.5rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  .h_un #star {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: none;
+    position: absolute;
+    right: 11px;
+    top: 0; }
+    .h_un #star img {
+      width: 1.8rem;
+      height: auto;
+      background: none; }
+  .h_un dl {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.3rem; }
+    .h_un dl dt {
+      margin-right: 0.9rem; }
+      .h_un dl dt img {
+        width: 5.4rem;
+        height: auto;
+        background: none; }
+    .h_un dl dd img {
+      width: 3.5rem;
+      height: auto;
+      background: none;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem; }
+    .h_un dl dd .h2 {
+      color: white;
+      margin-top: 1rem; }
+      .h_un dl dd .h2 span {
+        margin-left: 0.5rem; }
+
+.type {
+  position: relative;
+  top: 70px;
+  width: 100%;
+  height: 3.3rem;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc; }
+  .type ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3.3rem;
+    background: none; }
+    .type ul li {
+      flex: 1;
+      text-align: center;
+      line-height: 3.3rem; }
+      .type ul li a {
+        font-size: 1.4rem;
+        color: black; }
+    .type ul .on {
+      border-bottom: 2px solid #4194f0; }
+
+.main {
+  position: relative;
+  top: 80px;
+  flex: 1;
+  display: flex;
+  flex-direction: row; }
+  .main .left {
+    width: 6.8rem;
+    height: auto;
+    background: #f5f5f5; }
+    .main .left ul {
+      width: 6.8rem;
+      height: auto;
+      background: #f5f5f5; }
+      .main .left ul li {
+        display: block;
+        width: 100%;
+        height: 4rem;
+        background: none;
+        text-align: center;
+        border-bottom: 1px solid #eeeeee; }
+        .main .left ul li .i_1 {
+          width: 3rem;
+          height: auto;
+          background: #f5f5f5; }
+        .main .left ul li a {
+          display: block;
+          padding-top: 10px;
+          font-size: 1.2rem;
+          color: black; }
+      .main .left ul .list {
+        background: white; }
+
+.right {
+  // position: relative;
+  // top:20px;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .right #toop {
+
+    display: inline-block;
+    width: 0.4rem;
+    height: 3rem;
+    position: absolute;
+    left:86px;
+    top: -8px; }
+    .right #toop img {
+      width: auto;
+      height: 3.3rem;
+      background: none; }
+  .right .r_top {
+    width: 100%;
+    height: 3.3rem;
+    background: #f5f5f5;
+    overflow-x: hidden; }
+    .right .r_top .swiper-slide {
+      width: 2rem;
+      height: 2rem;
+      background: #f5f5f5;
+      border: 1px solid #999999;
+      text-align: center;
+      line-height: 2rem;
+      border-radius: 2rem;
+      margin-left: 20px;
+      margin-top: 5px;
+      color: black;
+      font-size: 14px; }
+    .right .r_top .che {
+      background: #4194f0;
+      border: none;
+      color: white; }
+
+.other {
+  margin-right: 1rem;
+  flex: 1; }
+
+.shop {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 9rem;
+  background: none; }
+  .shop #first {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .shop #first img {
+      width: 2.6rem;
+      height: auto;
+      background: none; }
+  .shop dl {
+    padding-top: 1rem;
+    box-sizing: border-box; }
+    .shop dl img {
+      width: 4.5rem;
+      height: auto;
+      background: none; }
+    .shop dl dt {
+      float: left; }
+    .shop dl dd {
+      float: left;
+      margin-left: 0.5rem; }
+      .shop dl dd p {
+        line-height: 2rem;
+        font-size: 14px; }
+      .shop dl dd h1 {
+        line-height: 2rem; }
+      .shop dl dd h2 {
+        position: relative;
+        line-height: 1.5rem; }
+        .shop dl dd h2 img {
+          width: 1.4rem;
+          height: auto;
+          background: none; }
+        .shop dl dd h2 span {
+          margin-right: 0.5rem;
+          text-align: center; }
+          .shop dl dd h2 span #txt a {
+            text-decoration: underline;
+            color: #ccc; }
+        .shop dl dd h2 #sec {
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: none;
+          position: absolute;
+          right: -9px;
+          bottom: 0; }
+          .shop dl dd h2 #sec img {
+            width: 1.4rem;
+            height: auto;
+            background: none; }
+        .shop dl dd h2 #thr {
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: none;
+          position: absolute;
+          right: 27px;
+          bottom: 0; }
+          .shop dl dd h2 #thr img {
+            width: 1.4rem;
+            height: auto;
+            background: none; }
+        .shop dl dd h2 #four {
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: none;
+          position: absolute;
+          right: 10px;
+          bottom: -1px; }
+  .shop h3 {
+    margin-left: 1rem;
+    width: 16rem;
+    height: 1.4rem;
+    background: auto;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.4rem;
+    margin-top: 0.3rem; }
+    .shop h3 a {
+      color: orange;
+      border: 1px solid orange;
+      border-right: none; }
+    .shop h3 span {
+      border: 1px solid orange;
+      background: orange;
+      color: white; }
+  @media screen and (min-width: 374px) and (max-width: 414px) {
+    .shop {
+      width: auto;
+      height: 10rem;
+      background: none; }
+      .shop #first {
+        width: 3.6rem;
+        height: 3.6rem;
+        background: none; }
+        .shop #first img {
+          width: 3.6rem;
+          height: auto;
+          background: none; }
+      .shop dl {
+        margin-left: 2rem; }
+        .shop dl img {
+          width: 7rem;
+          height: auto;
+          background: none; }
+      .shop h3 {
+        margin-left: 2rem; } }
+
+.shop_1 {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 7rem;
+  background: none; }
+  .shop_1 #first {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .shop_1 #first img {
+      width: 2.6rem;
+      height: auto;
+      background: none; }
+  .shop_1 dl {
+    border-bottom: 1px solid #eee;
+    padding-top: 1rem;
+    box-sizing: border-box; }
+    .shop_1 dl img {
+      width: 4.5rem;
+      height: auto;
+      background: none; }
+    .shop_1 dl dt {
+      float: left; }
+    .shop_1 dl dd {
+      float: left;
+      margin-left: 0.5rem; }
+      .shop_1 dl dd p {
+        line-height: 2rem;
+        font-size: 14px; }
+      .shop_1 dl dd h1 {
+        line-height: 2rem; }
+      .shop_1 dl dd h2 {
+        position: relative;
+        line-height: 1.5rem; }
+        .shop_1 dl dd h2 img {
+          width: 1.4rem;
+          height: auto;
+          background: none; }
+        .shop_1 dl dd h2 span {
+          margin-right: 0.5rem;
+          text-align: center; }
+          .shop_1 dl dd h2 span #txt a {
+            text-decoration: underline;
+            color: #ccc; }
+        .shop_1 dl dd h2 #sec {
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: none;
+          position: absolute;
+          right: -9px;
+          bottom: 7px; }
+          .shop_1 dl dd h2 #sec img {
+            width: 1.4rem;
+            height: auto;
+            background: none; }
+        .shop_1 dl dd h2 #thr {
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: none;
+          position: absolute;
+          right: 27px;
+          bottom: 0; }
+          .shop_1 dl dd h2 #thr img {
+            width: 1.4rem;
+            height: auto;
+            background: none; }
+        .shop_1 dl dd h2 #four {
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: none;
+          position: absolute;
+          right: 10px;
+          bottom: -1px; }
+  .shop_1 h3 {
+    margin-left: 1rem;
+    width: 16rem;
+    height: 1.4rem;
+    background: auto;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.4rem;
+    margin-top: 0.3rem; }
+    .shop_1 h3 a {
+      color: orange;
+      border: 1px solid orange;
+      border-right: none; }
+    .shop_1 h3 span {
+      border: 1px solid orange;
+      background: orange;
+      color: white; }
+  @media screen and (min-width: 374px) and (max-width: 414px) {
+    .shop_1 {
+      width: auto;
+      height: 10rem;
+      background: none; }
+      .shop_1 #first {
+        width: 3.6rem;
+        height: 3.6rem;
+        background: none; }
+        .shop_1 #first img {
+          width: 3.6rem;
+          height: auto;
+          background: none; }
+      .shop_1 dl {
+        margin-left: 1.5rem; }
+        .shop_1 dl img {
+          width: 7rem;
+          height: auto;
+          background: none; }
+        .shop_1 dl dd {
+          margin-left: 1rem; } }
+
+.warp {
+  position: relative; }
+
+.zhe {
+  width: 100%;
+  height: 100%;
+  background: #7f7f7f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  display: none; }
+
+.car {
+  width: 100%;
+  height: 19.3rem;
+  background: none;
+  position: absolute;
+  bottom: 0;
+  display: none; }
+  .car .c_top {
+    width: 100%;
+    height: 2.5rem;
+    background: #eeeeee;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    line-height: 2.5rem; }
+    .car .c_top h3 {
+      float: left;
+      font-size: 14px; }
+    .car .c_top a {
+      float: right;
+      color: black;
+      font-size: 14px; }
+  .car .c_main {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6.4rem;
+    background: white; }
+    .car .c_main span {
+      display: inline-block;
+      margin-top: 2rem;
+      width: 2rem;
+      height: 2rem;
+      background: none; }
+    .car .c_main .i_2 {
+      width: auto;
+      height: 4.4rem;
+      background: none;
+      margin-right: 0.5rem;
+      margin-top: 1rem; }
+    .car .c_main a {
+      text-overflow: ellipsis;
+      margin-top: 2rem; }
+
+.jia img, .jian img, .xuan img {
+  width: 1.5rem;
+  height: auto;
+  background: none; }
+
+.jia {
+  position: absolute;
+  right: 1.2rem;
+  top: 0; }
+
+.num {
+  position: absolute;
+  right: 3.3rem;
+  top: 0; }
+
+.jian {
+  position: absolute;
+  right: 6rem;
+  top: 0; }
+
+.mon {
+  margin-left: 1rem;
+  font-size: 1.4rem; }
+
+.c_un {
+  width: 100%;
+  height: 4rem;
+  background: none; }
+  .c_un ul {
+    width: 100%;
+    height: 4rem;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    float: left;
+    position: relative; }
+    .c_un ul .li_on {
+      opacity: 0.7;
+      flex: 1;
+      background: #434343;
+      line-height: 4rem; }
+      .c_un ul .li_on a {
+        color: white;
+        font-size: 1.4rem;
+        margin-left: 7rem; }
+    .c_un ul .li_two {
+      line-height: 4rem;
+      background: #ff8c50; }
+      .c_un ul .li_two a {
+        color: white;
+        font-size: 1.4rem;
+        margin-left: 1rem; }
+
+.b_car {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  position: absolute;
+  left: 14px;
+  top: 158px;
+  z-index: 5; }
+  .b_car img {
+    width: 4rem;
+    height: auto;
+    background: none;
+    z-index: 5; }
+
+.xiang {
+  width: 100%;
+  height: 100%;
+  background: none;
+  background: #f2f5f7; }
+  .xiang .x_1 {
+    padding: 0 1.2rem 0 1.5rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    background: white; }
+    .xiang .x_1 li {
+      width: 100%;
+      height: 4.1rem;
+      background: white;
+      border-bottom: 1px solid #eee; }
+      .xiang .x_1 li img {
+        width: auto;
+        height: 1.9rem;
+        background: none; }
+      .xiang .x_1 li .aaa {
+        font-size: 1.6rem;
+        color: black;
+        line-height: 4.1rem;
+        margin-left: 1rem; }
+      .xiang .x_1 li #new {
+        display: inline-block;
+        width: 100%;
+        height: 4.8rem;
+        background: none;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        float: left;
+        color: black; }
+
+.xiang {
+  width: 100%;
+  height: 100%;
+  background: none;
+  background: #f2f5f7; }
+  .xiang .x_2 {
+    padding: 0 1.2rem 0 1.5rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    background: white; }
+    .xiang .x_2 li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 4.8rem;
+      background: white;
+      border-bottom: 1px solid #eee; }
+      .xiang .x_2 li img {
+        margin-top: 1.5rem;
+        width: auto;
+        height: 1.9rem;
+        background: none; }
+      .xiang .x_2 li .aaa {
+        font-size: 1.6rem;
+        color: black;
+        line-height: 4.8rem;
+        margin-left: 1rem; }
+      .xiang .x_2 li #new {
+        display: inline-block;
+        width: 7rem;
+        height: 4.8rem;
+        background: none;
+        font-size: 1.2rem;
+        line-height: 3rem;
+        color: black; }
+      .xiang .x_2 li .zhu {
+        display: inline-block;
+        -webkit-flex: 1;
+        width: 100%;
+        height: 4.8rem;
+        background: none; }
+        .xiang .x_2 li .zhu .aa {
+          color: black;
+          line-height: 2rem; }
+
+.assess {
+  width: 100%;
+  height: 100%;
+  background: #f2f5f7; }
+  .assess .whole {
+    position: relative;
+    width: 100%;
+    height: 6.8rem;
+    background: white;
+    display: flex;
+    flex-direction: row; }
+    .assess .whole .numm {
+      margin-left: 3rem;
+      margin-top: 1rem; }
+      .assess .whole .numm p {
+        font-size: 1.8rem;
+        font-weight: 500; }
+      .assess .whole .numm h1 {
+        font-size: 1.4rem;
+        color: #959595; }
+      .assess .whole .numm h2 {
+        font-size: 1.4rem;
+        color: #a8a8a8; }
+    .assess .whole ul {
+      -webkit-flex: 1;
+      margin-left: 2rem;
+      margin-top: 0.5rem; }
+      .assess .whole ul li {
+        line-height: 3rem; }
+        .assess .whole ul li a {
+          font-size: 1.4rem;
+          color: black;
+          margin-right: 0.5rem; }
+        .assess .whole ul li img {
+          width: auto;
+          height: 1rem;
+          background: white;
+          margin-right: 0.5rem; }
+    .assess .whole .w_cen {
+      width: 0.5rem;
+      height: auto;
+      background: none;
+      position: absolute;
+      left: 11rem;
+      top: 1.5rem; }
+      .assess .whole .w_cen img {
+        width: 0.05rem;
+        height: auto;
+        background: none; }
+
+.user {
+  width: 100%;
+  height: auto;
+  background: white;
+  margin-top: 1rem; }
+
+.use {
+  padding: 0 1rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  height: 6.7rem;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  .use dl {
+    float: left;
+    display: flex;
+    flex-direction: row; }
+    .use dl dt img {
+      width: 3.2rem;
+      height: auto;
+      background: white; }
+    .use dl dd {
+      margin-left: 0.5rem; }
+      .use dl dd img {
+        width: auto;
+        height: 1rem;
+        background: white; }
+  .use .data {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #d0d0d0; }
+footer {
+  background: yellow;
+  width: 100%;
+  height: 3.5rem;
+  background: #fff; }
+footer {
+  border-top: 2px solid #e6e9ea;
+  position: absolute;bottom: -120px; }
+  footer dl {
+    width: 33%;
+    height: 3rem;
+    float: left;
+    text-align: center;
+    margin-top: 0.5rem;
+     }
+    footer dl img {
+      width: 1.7rem;
+      height: auto;
+      background: none; }
+    footer dl dd {
+      font-size: 1.4rem; }

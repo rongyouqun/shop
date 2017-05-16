@@ -1,0 +1,75 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;  
+}
+html{
+    font-size: 62.5%;
+}
+html,body,.box{
+    .full(100%,100%,none);
+}
+.box{
+    .box(vertical);
+}
+header{
+    .full(100%,4.4rem,#4194f0);
+}
+header{
+     box-sizing: border-box;
+      .box(row);
+      position: relative;
+    .s_t{ 
+      position: absolute;
+      left: 13px;
+      top: 13px;
+        img{
+           .full(auto,2.1rem,none);
+        }
+    }
+    .h_1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        margin-left: 1rem;
+        color: white;
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
+}
+section{
+    background: #f3f5f7;
+    -webkit-box-flex: 1;
+    .why{
+        margin-top: 1rem;
+        .i_1{
+            .full(1.4rem,auto,none);
+            margin-left: 1rem;
+        }
+        li{
+            border-bottom: 1px solid #e6e9eb;
+            border-top: 1px solid #e6e9eb;
+            line-height: 4rem;
+            background: white;
+            border-left: 3px solid #4194F0;
+            margin-bottom: 0.5rem;
+            position: relative;
+            a{
+                margin-left: 1rem;
+                color: black;
+                font-size: 1.4rem;
+            }
+            .lt{
+                display: inline-block;
+                .full(0.8rem,auto,none);
+                position: absolute;
+                right: 10px;
+                top: 15px;
+            }
+        }
+    }
+}

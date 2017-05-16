@@ -1,0 +1,78 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #4194f0;
+}
+section {
+  -webkit-box-flex: 1;
+}
+header {
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: row;
+  position: relative;
+}
+header .s_t {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+}
+header .s_t img {
+  width: auto;
+  height: 2.1rem;
+  background: none;
+}
+header .h_1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.banner img {
+  width: auto;
+  height: 8rem;
+  background: none;
+  margin-top: 1.5rem;
+}
+.u_1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 4rem;
+}
+.u_1 li {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.u_1 li button {
+  border: 1px solid #4194F0;
+  border-radius: 15px;
+  width: 9rem;
+  height: 2.5rem;
+  background: none;
+}
+.u_1 li button a {
+  color: #4194F0;
+}

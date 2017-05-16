@@ -1,0 +1,71 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;  
+}
+html{
+    font-size: 62.5%;
+}
+html,body,.warp{
+    .full(100%,100%,none);
+}
+.warp{
+    .box(vertical);
+}
+header{
+   .full(100%,4rem,#4194f0);//
+}
+section{
+    -webkit-box-flex: 1;
+   
+}
+header{
+     box-sizing: border-box;
+      .box(row);
+      position: relative;
+    .s_t{ 
+      position: absolute;
+      left: 13px;
+      top: 13px;
+        img{
+           .full(auto,2.1rem,none);
+        }
+    }
+    .h_1{
+        -webkit-box-flex: 1;
+        text-align: center;
+        margin-left: 1rem;
+        color: white;
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
+}
+.banner{
+    .full(100%,auto,none);
+     text-align: center;
+    img{
+        .full(auto,8rem,none);
+       
+        margin-top: 1.5rem;
+    }
+}
+.u_1{
+    .box(horizontal);
+    margin-top: 4rem;
+    li{
+        -webkit-box-flex: 1;text-align: center;
+        button{
+            border: 1px solid #4194F0;
+            border-radius: 15px;
+            .full(9rem,2.5rem,none);
+            a{
+             color: #4194F0;   
+            }
+        }
+    }
+}

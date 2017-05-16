@@ -1,0 +1,99 @@
+@import url("reset.css");
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:row) {
+    display: flex;
+    flex-direction: @ver;
+}
+html,
+body,
+.wrapper {
+    .full(100%,100%,none);
+    overflow: hidden;
+}
+.wrapper{
+    .box(column);
+    header{
+        .full(100%,4.5rem,#4194f0);
+        #back{
+            .full(3rem,3rem,none);
+            position: absolute;
+            left: 17px;
+            top: 18px;
+            img{
+                .full(2rem,auto,none);
+            }
+        }
+        h1{
+            text-align: center;
+            line-height: 4.5rem;
+            font-size: 1.8rem;
+            color: white;
+        }
+    }
+    section{
+        flex: 1;
+        background: #f1f5f8;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        .banner{
+            .full(100%,auto,white);
+            margin-bottom: 5rem;
+            .one{
+                min-height: 19rem;
+                color: #b8b8b8;
+                padding-top: 1.2rem;
+                padding-left: 1rem;
+                border-bottom: none;
+                font-size: 14px;
+            }
+            .two{
+                padding-left: 1rem;
+                line-height: 2.5rem;
+                b{
+                    img{
+                        .full(1rem,1rem,none);
+                        padding-right: 1rem;
+                    }
+                }
+                a{
+                   float: right; 
+                   margin-right: 1rem;
+                }
+            }
+            li{
+                padding-left: 1rem;
+                line-height: 2.5rem;
+                border-bottom: 1px solid #ccc;
+                a{
+                    float: right;
+                    
+                    img{
+                        .full(1.2rem,1.2rem,none);
+                        margin-right: 1rem;      
+                    }
+                }
+            }
+        }
+    }
+    footer{
+       .full(100%,6rem,white);
+       padding: 1rem;
+       box-sizing: border-box;
+       button{
+           flex: 1;
+           .full(100%,4rem,#4194f0);
+           border-radius: 10px;
+           text-align: center;
+           border: none;
+           text-align: center;
+           font-size: 20px;
+           color: white;
+       } 
+    }
+}
